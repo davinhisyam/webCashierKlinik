@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f3f4ee;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #019dcc;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7f8078;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #64dec9;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: left;
+}
+
+button:hover {
+    background-color: #019dcc;
+    transform: translateY(-5px);
+}
+
+.doctor-name {
+    font-size: 1.2rem;
+}
+
+.doctor-specialty {
+    font-size: 0.9rem;
+    color: #fdd24c;
+}
+
+/* Next Page Button Styling */
+.next-page {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #fdd24c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-page:hover {
+    background-color: #ffc107;
+}

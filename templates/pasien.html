@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Pasien Klinik Gigi</title>
+    <link rel="stylesheet" href="D:\web kasir\static\css\pasien.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pendaftaran Pasien Klinik Gigi</h2>
+        <form action="/submit_registration" method="post">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Tanggal Lahir</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender" name="gender" required>
+                <option value="">Pilih</option>
+                <option value="male">Laki-laki</option>
+                <option value="female">Perempuan</option>
+            </select>
+
+            <label for="address">Alamat</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="phone">Nomor Telepon</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="complaint">Keluhan</label>
+            <textarea id="complaint" name="complaint" rows="3" required></textarea>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+</body>
+</html>
